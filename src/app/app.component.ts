@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'seo_buddy';
+  text_content:string = "";
+
+  constructor(){}
+
+  ngOnInit(){
+
+  }
+
+  ContentCheck(event: Event): void{
+    console.log(event);
+  }
 }

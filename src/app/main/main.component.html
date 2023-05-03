@@ -1,0 +1,20 @@
+<mat-toolbar class="toolbar-nav">
+    <div class="logo-text">
+      <span>SEO Buddy</span>
+    </div>
+    <div class="features-nav">
+      <a routerLinkActive="activeNav" mat-stroked-button>Keyword Grabber</a>
+    </div>
+  </mat-toolbar>
+  
+  <div class="container">
+    <div class="inner-container">
+      <div class="text-box-div">
+        <label for="text-box"></label>
+      <textarea [(ngModel)]="text_content" name="text-box" id="text-box"></textarea>
+      <p class="char-counter">{{text_content.length}} / 1000</p>
+      </div>
+      <button mat-raised-button class="modal-button" (click)="getKeywords()">Get me keywords!</button>
+  
+    </div>
+  </div>
