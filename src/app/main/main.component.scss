@@ -50,7 +50,7 @@
     padding: 15px;
     color: var(--main-text-color);
     display: block;
-    font-size: 1em;
+    font-size: 1.25rem;
 }
 
 .char-counter{
@@ -63,11 +63,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 10;
 }
 
-.activeNav{
+.features-nav{
+    a{
+        font-size: 1em;
+        border: 1px solid;
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.activeNavLink{
     background-color: #000814;
-    color: var(--main-text-color);
+    color: #fff;
+}
+
+
+.logo-text{
+    font-style: italic;
+    font-weight: 600;
 }
 
 ::-webkit-scrollbar {
